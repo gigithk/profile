@@ -1,0 +1,15 @@
+{
+  "name": "Gigith Kunjumon | Senior UX Design Leader",
+  "short_name": "Gigith Kunjumon",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fbfbf8",
+  "theme_color": "#fbfbf8",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
