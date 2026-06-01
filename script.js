@@ -50,3 +50,35 @@ stages.forEach((stage) => {
   stage.addEventListener("mouseenter", activate);
   stage.addEventListener("focus", activate);
 });
+
+const caseFilters = document.querySelectorAll("[data-case-filter]");
+const portfolioCases = document.querySelectorAll("[data-case-categories]");
+const caseFilterStatus = document.getElementById("case-filter-status");
+
+caseFilters.forEach((filterButton) => {
+  filterButton.addEventListener("click", () => {
+    const selectedFilter = filterButton.dataset.caseFilter;
+    let visibleCases = 0;
+
+    caseFilters.forEach((item) => {
+      const isActive = item === filterButton;
+      item.classList.toggle("is-active", isActive);
+      item.setAttribute("aria-pressed", String(isActive));
+    });
+
+    portfolioCases.forEach((portfolioCase) => {
+      const categories = portfolioCase.dataset.caseCategories.split(" ");
+      const isVisible = selectedFilter === "all" || categories.includes(selectedFilter);
+      portfolioCase.hidden = !isVisible;
+      if (isVisible) visibleCases += 1;
+    });
+
+    if (caseFilterStatus) {
+      const label = filterButton.textContent.trim();
+      caseFilterStatus.textContent =
+        selectedFilter === "all"
+          ? `${visibleCases} case studies`
+          : `${visibleCases} case studies · ${label}`;
+    }
+  });
+});
