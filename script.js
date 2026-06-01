@@ -15,7 +15,7 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
         observer.unobserve(entry.target);
       });
     },
-    { threshold: 0.16 }
+    { threshold: 0.08 }
   );
   reveals.forEach((element) => observer.observe(element));
 }
