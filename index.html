@@ -80,30 +80,48 @@
           <p class="section-label">Working model</p>
           <p class="section-meta">A lightweight UX lifecycle</p>
         </div>
-        <h2 id="lifecycle-title" class="sr-only">UX lifecycle</h2>
+        <h2 id="lifecycle-title">From evidence to continuous improvement.</h2>
+        <p class="lifecycle-intro">
+          A practical baseline for complex product teams. Each stage connects the
+          next product decision with the right level of UX evidence and quality control.
+        </p>
         <div class="lifecycle-card">
           <div class="lifecycle-line" role="group" aria-label="Discover, Design, Validate, Deliver">
             <span class="lifecycle-track" aria-hidden="true"></span>
-            <button class="lifecycle-stage is-active" type="button" data-stage-detail="Frame the problem with customer evidence, journeys, and stakeholder alignment.">
+            <button class="lifecycle-stage is-active" type="button" aria-pressed="true" data-stage-label="Discover" data-stage-detail="Frame the problem before requirements are locked. Build a shared view of the user, the journey, and the business goal." data-stage-practices="Persona &amp; user segments|Journey mapping|Stakeholder alignment">
               <span class="stage-node" aria-hidden="true"></span>
               <span class="stage-name">Discover</span>
             </button>
-            <button class="lifecycle-stage" type="button" data-stage-detail="Turn evidence into clear workflows, prototypes, and system-aligned concepts.">
+            <button class="lifecycle-stage" type="button" aria-pressed="false" data-stage-label="Design" data-stage-detail="Turn evidence into clear interaction decisions. Shape workflows, testable concepts, and interfaces aligned with the design system." data-stage-practices="Information architecture|Wireframes &amp; workflows|Design-system alignment">
               <span class="stage-node" aria-hidden="true"></span>
               <span class="stage-name">Design</span>
             </button>
-            <button class="lifecycle-stage" type="button" data-stage-detail="Use design review, usability testing, and analytics to improve decisions.">
+            <button class="lifecycle-stage" type="button" aria-pressed="false" data-stage-label="Validate" data-stage-detail="Check whether the product direction works before and after implementation. Combine qualitative feedback with visible quality signals." data-stage-practices="UI review|Usability testing|Analytics &amp; metrics">
               <span class="stage-node" aria-hidden="true"></span>
               <span class="stage-name">Validate</span>
             </button>
-            <button class="lifecycle-stage" type="button" data-stage-detail="Support handoff, design QA, debt visibility, and continuous improvement.">
+            <button class="lifecycle-stage" type="button" aria-pressed="false" data-stage-label="Deliver" data-stage-detail="Keep experience quality visible through implementation and future releases. Make handoff, effort, and improvement work traceable." data-stage-practices="Documentation &amp; handoff|Effort tracking|UX debt visibility">
               <span class="stage-node" aria-hidden="true"></span>
               <span class="stage-name">Deliver</span>
             </button>
           </div>
-          <p id="stage-detail" class="stage-detail" aria-live="polite">
-            Frame the problem with customer evidence, journeys, and stakeholder alignment.
-          </p>
+          <div class="stage-panel" aria-live="polite">
+            <div>
+              <p id="stage-label" class="stage-panel-label">Discover</p>
+              <p id="stage-detail" class="stage-detail">
+                Frame the problem before requirements are locked. Build a shared view of
+                the user, the journey, and the business goal.
+              </p>
+            </div>
+            <div>
+              <p class="stage-practices-label">Core practices</p>
+              <ul id="stage-practices" class="stage-practices">
+                <li>Persona &amp; user segments</li>
+                <li>Journey mapping</li>
+                <li>Stakeholder alignment</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 

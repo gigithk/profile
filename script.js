@@ -21,12 +21,29 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
 }
 
 const stageDetail = document.getElementById("stage-detail");
+const stageLabel = document.getElementById("stage-label");
+const stagePractices = document.getElementById("stage-practices");
 const stages = document.querySelectorAll(".lifecycle-stage");
 
 stages.forEach((stage) => {
   const activate = () => {
-    stages.forEach((item) => item.classList.toggle("is-active", item === stage));
+    stages.forEach((item) => {
+      const isActive = item === stage;
+      item.classList.toggle("is-active", isActive);
+      item.setAttribute("aria-pressed", String(isActive));
+    });
+    if (stageLabel) stageLabel.textContent = stage.dataset.stageLabel;
     if (stageDetail) stageDetail.textContent = stage.dataset.stageDetail;
+    if (stagePractices) {
+      const practices = stage.dataset.stagePractices.split("|");
+      stagePractices.replaceChildren(
+        ...practices.map((practice) => {
+          const item = document.createElement("li");
+          item.textContent = practice;
+          return item;
+        })
+      );
+    }
   };
 
   stage.addEventListener("click", activate);
