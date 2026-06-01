@@ -383,10 +383,83 @@ a.index-row:hover svg, a.index-row:focus-visible svg { transform: translateX(4px
   text-transform: uppercase;
 }
 .case-visual span:nth-child(2) { background: rgba(199, 233, 0, .18); }
+.case-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .52);
+  overflow: hidden;
+}
+.case-meta div {
+  min-height: 76px;
+  padding: 13px 12px;
+  border-right: 1px solid var(--line);
+}
+.case-meta div:last-child { border-right: 0; }
+.case-meta span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.case-meta strong {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+}
 .case-copy { padding-block: 34px 54px; }
 .case-block { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 20px; padding-block: 22px; border-bottom: 1px solid var(--line); }
 .case-block h2 { margin: 1px 0 0; color: var(--muted); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
 .case-block p { margin: 0; color: var(--muted); }
+.case-outcomes { padding-block: 44px 34px; border-bottom: 1px solid var(--line); }
+.case-outcomes > h2 { max-width: 580px; margin: 10px 0 18px; }
+.outcome-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+.outcome-grid article {
+  min-height: 172px;
+  padding: 15px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+.outcome-grid article:nth-child(2) { background: rgba(199, 233, 0, .12); }
+.outcome-grid h3 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  letter-spacing: -.025em;
+  line-height: 1.35;
+}
+.outcome-grid p, .case-value, .case-disclosure p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+.case-value { margin-top: 16px; font-size: 13px; }
+.case-value strong { color: var(--ink); }
+.case-disclosure {
+  margin-top: 24px;
+  padding: 15px 16px;
+  border-left: 3px solid var(--accent);
+  background: rgba(255, 255, 255, .56);
+}
+.case-disclosure strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--accent-ink);
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
 .case-contact { padding-top: 34px; font-size: 13px; font-weight: 700; }
 .case-contact a { color: var(--accent-ink); }
 .baseline-artifact { padding-block: 34px 4px; }
@@ -425,6 +498,9 @@ a.index-row:hover svg, a.index-row:focus-visible svg { transform: translateX(4px
   transition: background 180ms ease, padding 180ms ease;
 }
 .snapshot-row:hover { padding-inline: 10px; background: var(--soft); }
+.snapshot-link { grid-template-columns: 88px minmax(0, 1fr) 18px; align-items: center; }
+.snapshot-link svg { color: var(--accent-ink); transition: transform 180ms ease; }
+.snapshot-link:hover svg, .snapshot-link:focus-visible svg { transform: translateX(4px); }
 .snapshot-row h2 { margin-bottom: 4px; font-size: 16px; }
 .snapshot-row p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.62; }
 .work-index-footer { padding-block: 38px 52px; }
@@ -451,9 +527,17 @@ a.index-row:hover svg, a.index-row:focus-visible svg { transform: translateX(4px
   .index-row { grid-template-columns: 54px minmax(0, 1fr) 16px; }
   .static-row { grid-template-columns: 54px minmax(0, 1fr); }
   .case-visual { grid-template-columns: repeat(2, 1fr); }
+  .case-meta { grid-template-columns: 1fr; }
+  .case-meta div { min-height: auto; border-right: 0; border-bottom: 1px solid var(--line); }
+  .case-meta div:last-child { border-bottom: 0; }
   .case-block { grid-template-columns: 1fr; gap: 7px; }
+  .outcome-grid { grid-template-columns: 1fr; }
+  .outcome-grid article { min-height: auto; }
   .baseline-grid { grid-template-columns: 1fr; }
   .snapshot-row { grid-template-columns: 1fr; gap: 6px; }
+  .snapshot-link { grid-template-columns: 1fr 18px; }
+  .snapshot-link .row-index { grid-column: 1 / -1; }
+  .snapshot-link svg { grid-column: 2; grid-row: 2; }
   .exploration { grid-template-columns: 1fr; gap: 20px; padding-inline: 16px; }
 }
 
