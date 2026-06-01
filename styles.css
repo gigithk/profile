@@ -571,6 +571,7 @@ a.index-row:hover svg, a.index-row:focus-visible svg { transform: translateX(4px
   border-bottom: 1px solid var(--line);
   transition: background 180ms ease, padding 180ms ease;
 }
+.portfolio-case[hidden] { display: none; }
 .portfolio-case:hover, .portfolio-case:focus-visible { padding-left: 10px; background: var(--soft); }
 .portfolio-case svg { color: var(--accent-ink); transition: transform 180ms ease; }
 .portfolio-case:hover svg, .portfolio-case:focus-visible svg { transform: translateX(4px); }
