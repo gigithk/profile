@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://gigithk.github.io/portfolio/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="site.webmanifest" />
-    <meta name="theme-color" content="#fbfbf8" />
+    <meta name="theme-color" content="#f8f8f4" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Gigith Kunjumon" />
     <meta property="og:title" content="Gigith Kunjumon | Senior UX Design Leader" />
@@ -55,6 +55,7 @@
 
     <main id="main" class="shell">
       <section id="top" class="intro section" data-reveal>
+        <p class="intro-status"><span aria-hidden="true"></span>Open to international UX leadership conversations</p>
         <p class="section-label">Today</p>
         <h1>Building the conditions for better product decisions.</h1>
         <p>
@@ -68,6 +69,11 @@
           moving design upstream: from late-stage review to early involvement,
           shared practices, feedback loops, and practical quality gates.
         </p>
+        <div class="proof-strip" aria-label="Profile summary">
+          <div><strong>13</strong><span>Years in design</span></div>
+          <div><strong>2 <i aria-hidden="true">→</i> 28</strong><span>UX capability growth</span></div>
+          <div><strong>4</strong><span>Lifecycle stages</span></div>
+        </div>
       </section>
 
       <section class="lifecycle section" aria-labelledby="lifecycle-title" data-reveal>
@@ -76,28 +82,30 @@
           <p class="section-meta">A lightweight UX lifecycle</p>
         </div>
         <h2 id="lifecycle-title" class="sr-only">UX lifecycle</h2>
-        <div class="lifecycle-line" role="group" aria-label="Discover, Design, Validate, Deliver">
-          <span class="lifecycle-track" aria-hidden="true"></span>
-          <button class="lifecycle-stage is-active" type="button" data-stage-detail="Frame the problem with customer evidence, journeys, and stakeholder alignment.">
-            <span class="stage-node" aria-hidden="true"></span>
-            <span class="stage-name">Discover</span>
-          </button>
-          <button class="lifecycle-stage" type="button" data-stage-detail="Turn evidence into clear workflows, prototypes, and system-aligned concepts.">
-            <span class="stage-node" aria-hidden="true"></span>
-            <span class="stage-name">Design</span>
-          </button>
-          <button class="lifecycle-stage" type="button" data-stage-detail="Use design review, usability testing, and analytics to improve decisions.">
-            <span class="stage-node" aria-hidden="true"></span>
-            <span class="stage-name">Validate</span>
-          </button>
-          <button class="lifecycle-stage" type="button" data-stage-detail="Support handoff, design QA, debt visibility, and continuous improvement.">
-            <span class="stage-node" aria-hidden="true"></span>
-            <span class="stage-name">Deliver</span>
-          </button>
+        <div class="lifecycle-card">
+          <div class="lifecycle-line" role="group" aria-label="Discover, Design, Validate, Deliver">
+            <span class="lifecycle-track" aria-hidden="true"></span>
+            <button class="lifecycle-stage is-active" type="button" data-stage-detail="Frame the problem with customer evidence, journeys, and stakeholder alignment.">
+              <span class="stage-node" aria-hidden="true"></span>
+              <span class="stage-name">Discover</span>
+            </button>
+            <button class="lifecycle-stage" type="button" data-stage-detail="Turn evidence into clear workflows, prototypes, and system-aligned concepts.">
+              <span class="stage-node" aria-hidden="true"></span>
+              <span class="stage-name">Design</span>
+            </button>
+            <button class="lifecycle-stage" type="button" data-stage-detail="Use design review, usability testing, and analytics to improve decisions.">
+              <span class="stage-node" aria-hidden="true"></span>
+              <span class="stage-name">Validate</span>
+            </button>
+            <button class="lifecycle-stage" type="button" data-stage-detail="Support handoff, design QA, debt visibility, and continuous improvement.">
+              <span class="stage-node" aria-hidden="true"></span>
+              <span class="stage-name">Deliver</span>
+            </button>
+          </div>
+          <p id="stage-detail" class="stage-detail" aria-live="polite">
+            Frame the problem with customer evidence, journeys, and stakeholder alignment.
+          </p>
         </div>
-        <p id="stage-detail" class="stage-detail" aria-live="polite">
-          Frame the problem with customer evidence, journeys, and stakeholder alignment.
-        </p>
       </section>
 
       <section id="work" class="section" data-reveal>
@@ -137,13 +145,20 @@
       </section>
 
       <section class="section exploration" data-reveal>
-        <p class="section-label">Current exploration</p>
-        <h2>Making UX knowledge easier to reuse.</h2>
-        <p>
-          I am exploring AI-assisted UX review, research reuse, and design-to-code
-          workflows with human checkpoints: ways to keep product context alive
-          without adding process weight.
-        </p>
+        <div>
+          <p class="section-label">Current exploration</p>
+          <h2>Making UX knowledge easier to reuse.</h2>
+          <p>
+            I am exploring AI-assisted UX review, research reuse, and design-to-code
+            workflows with human checkpoints: ways to keep product context alive
+            without adding process weight.
+          </p>
+        </div>
+        <div class="exploration-signals" aria-label="Current exploration areas">
+          <span>AI-assisted review</span>
+          <span>Research reuse</span>
+          <span>Design-to-code</span>
+        </div>
       </section>
 
       <section id="writing" class="section" data-reveal>
