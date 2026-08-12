@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Gigith, Product Experience Designer</title>
+  <desc id="desc">UX, product strategy, systems thinking and AI intersect in a bold X.</desc>
+  <rect width="1200" height="630" fill="#f3f0e8"/>
+  <path d="M704 -92h122L1196 722h-122L704 -92Z" fill="#10100e"/>
+  <path d="M1060 -92h122L812 722H690L1060 -92Z" fill="#10100e"/>
+  <circle cx="944" cy="315" r="18" fill="#d64b25"/>
+  <line x1="64" y1="62" x2="1136" y2="62" stroke="#cbc7bb"/>
+  <line x1="64" y1="568" x2="1136" y2="568" stroke="#cbc7bb"/>
+  <text x="64" y="122" fill="#65645e" font-family="Arial, sans-serif" font-size="24" font-weight="600">PRODUCT EXPERIENCE DESIGNER</text>
+  <text x="52" y="350" fill="#10100e" font-family="Arial, sans-serif" font-size="190" font-weight="700" letter-spacing="-14">GIGITH</text>
+  <text x="64" y="520" fill="#10100e" font-family="Arial, sans-serif" font-size="32" font-weight="500">UX × PRODUCT STRATEGY × SYSTEMS × AI</text>
+</svg>
