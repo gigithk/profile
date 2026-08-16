@@ -1,3 +1,3 @@
 :HL["/profile/_next/static/chunks/16x5qofcam0rz.css","style"]
 :HL["/profile/gigith-signature.svg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"6O_w2jMVDgX96n3qi9-sJ"}
+0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"1u1Ua2y_qYIq8RUBlT2dx"}
