@@ -7,4 +7,4 @@
 :HL["/profile/images/portrait/gigith-hero-exact-shadow-2.svg","image"]
 :HL["/profile/images/portrait/gigith-hero-exact-shadow-3.svg","image"]
 :HL["/profile/images/portrait/gigith-hero-figma-exact.png","image",{"imageSizes":"(max-width: 640px) calc(100vw - 2rem), (max-width: 900px) 38vw, 37vw","fetchPriority":"high"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"KOkjS7toXEHTRSKBMOkTF"}
+0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"393i2tMfLto7vlhQ1Wi4X"}
